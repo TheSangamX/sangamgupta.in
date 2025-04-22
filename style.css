@@ -330,6 +330,9 @@ nav .fas{
 @media only screen and (max-width: 600px){
     #header{
         background-image: url(images/sgphonebackground.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .header-text{
         margin-top: 100%;
