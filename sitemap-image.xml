@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://www.sangamgupta.in/</loc>
+    <image:image>
+      <image:loc>https://www.sangamgupta.in/images/sangamgupta-portrait-1200x1200.png</image:loc>
+      <image:caption>Sangam Gupta, visionary AI-Powered Trader & CEO</image:caption>
+      <image:title>Sangam Gupta Portrait</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.sangamgupta.in/</loc>
+    <image:image>
+      <image:loc>https://www.sangamgupta.in/images/sangamgupta-profile-1200x1200.png</image:loc>
+      <image:caption>Sangam Gupta, future Quantitative Leader</image:caption>
+      <image:title>Sangam Gupta Profile</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.sangamgupta.in/</loc>
+    <image:image>
+      <image:loc>https://www.sangamgupta.in/images/sangamgupta-header-1200x1200.png</image:loc>
+      <image:caption>Elite tech entrepreneur building autonomous financial systems</image:caption>
+      <image:title>Sangam Gupta Header Banner</image:title>
+    </image:image>
+  </url>
+
+</urlset>
