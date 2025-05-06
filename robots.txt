@@ -1,9 +1,4 @@
 User-agent: *
-Disallow: /admin/
-Disallow: /login/
-Allow: /
-
-# Explicitly allow image crawling
-Allow: /images/
+Disallow:
 
 Sitemap: https://www.sangamgupta.in/sitemap.xml
