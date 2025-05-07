@@ -1,4 +1,24 @@
+# robots.txt for https://www.sangamgupta.in/
 User-agent: *
+Allow: /
+Allow: /images/
+Allow: /images/*.png
+Allow: /images/*.jpg
+Allow: /images/*.jpeg
+Allow: /images/*.gif
+Allow: /images/*.ico
+Allow: /images/*.svg
+Allow: /images/*.webp
+
+# Explicitly allow all images for better crawling
+User-agent: Googlebot-Image
+Allow: /
+Allow: /images/
 Disallow:
 
+# Allow Internet Archive to crawl and archive the site
+User-agent: ia_archiver
+Allow: /
+
+# Sitemap location
 Sitemap: https://www.sangamgupta.in/sitemap.xml
