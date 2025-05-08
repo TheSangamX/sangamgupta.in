@@ -497,6 +497,71 @@
 
 
 
+
+    <!-- Market Overview Dashboard -->
+    <style>
+        body {
+          background-color: #212121;
+          color: #fff;
+          font-family: 'Poppins', sans-serif;
+          margin: 0;
+          padding: 0;
+          position: relative;
+        }
+      
+        .dashboard-btn {
+          background-color: #00e676; /* Green color */
+          color: #fff;
+          border: none;
+          padding: 0.8rem 1.5rem;
+          font-size: 1rem;
+          font-weight: 600;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+        }
+      
+        .dashboard-btn:hover {
+          background-color: #00c853; /* Darker green on hover */
+        }
+      
+        .dashboard-btn:focus {
+          outline: none;
+        }
+      
+        .dashboard-btn i {
+          font-size: 1.2rem;
+        }
+      </style>
+      
+      <body>
+
+        <button id="market-overview-btn" class="dashboard-btn">
+          <i class="fas fa-chart-line"></i> Market Overview
+        </button>
+      
+        <script>
+          document.getElementById("market-overview-btn").addEventListener("click", function() {
+            window.location.href = "dashboard.html";  // Redirect to dashboard.html
+          });
+        </script>
+      </body>
+
+
+
+
+
+
+
+
+      
     
 </body>
 </html>
