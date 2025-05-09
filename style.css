@@ -417,3 +417,23 @@ nav .fas{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Shadow effect */
   }
   
+
+/* Github */
+.calendar {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+  }
+  
+  .calendar .contrib-footer {
+    display: none; /* hides the footer credit */
+  }
+  
+
+  #contact {
+    background-color: #212121; /* assuming it's your matte/off-black */
+    border-radius: 20px; /* or 24px for extra softness */
+    padding: 60px 20px;
+    margin: 40px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); /* optional for elevation */
+  }
+  
