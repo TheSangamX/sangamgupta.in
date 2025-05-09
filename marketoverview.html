@@ -313,6 +313,329 @@
     // Auto refresh every 5 minutes
     setInterval(updateDashboard, 300000);
   </script>
+
+
+
+
+
+    <!-- Rotating Quotes Section -->
+<div id="quote-box">
+  Loading inspirational quote...
+</div>
+
+<!-- CSS Styling (You can place this inside a <style> tag in <head>) -->
+<style>
+  #quote-box {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    margin: 2rem auto;
+    background-color: #212121;
+    color: #ffffff;
+    border-radius: 16px;
+    max-width: 800px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+</style>
+
+<!-- JavaScript Logic (Place at the end of <body>) -->
+<script>
+  const quotes = [
+    "“Without data, you're just another person with an opinion.” – W. Edwards Deming",
+    "“In investing, what is comfortable is rarely profitable.” – Robert Arnott",
+    "“Data is the new oil.” – Clive Humby",
+    "“The stock market is a device for transferring money from the impatient to the patient.” – Warren Buffett",
+    "“The goal is to turn data into information, and information into insight.” – Carly Fiorina",
+    "“Machines can see patterns humans can’t.” – Unknown",
+    "“Price is what you pay. Value is what you get.” – Warren Buffett",
+    "“An algorithm must be seen to be believed.” – Donald Knuth",
+    "“Risk comes from not knowing what you're doing.” – Warren Buffett",
+    "“Data science is the sexiest job of the 21st century.” – Harvard Business Review",
+    "“Trading doesn’t just reveal your character, it also builds it if you stay in the game long enough.” – Yvan Byeajee",
+    "“AI will not replace you. A person using AI will.” – Unknown",
+    "“Big data isn’t about bits, it’s about talent.” – Douglas Merrill",
+    "“It’s not about having the right opportunities. It’s about handling the opportunities right.” – Mark Cuban",
+    "“Artificial intelligence is the new electricity.” – Andrew Ng",
+    "“The four most dangerous words in investing are: ‘this time it’s different.’” – Sir John Templeton",
+    "“In God we trust, all others bring data.” – W. Edwards Deming",
+    "“Behind every stock is a company. Find out what it's doing.” – Peter Lynch",
+    "“The purpose of computing is insight, not numbers.” – Richard Hamming",
+    "“Data beats emotions.” – Sean Rad",
+    "“Financial freedom is available to those who learn about it and work for it.” – Robert Kiyosaki",
+    "“Prediction is very difficult, especially if it’s about the future.” – Niels Bohr",
+    "“Compound interest is the eighth wonder of the world.” – Albert Einstein",
+    "“You can’t manage what you can’t measure.” – Peter Drucker",
+    "“The best investment you can make is in yourself.” – Warren Buffett",
+    "“Data are becoming the new raw material of business.” – Craig Mundie",
+    "“If you don’t find a way to make money while you sleep, you will work until you die.” – Warren Buffett",
+    "“AI is likely to be either the best or worst thing to happen to humanity.” – Stephen Hawking",
+    "“Know what you own, and know why you own it.” – Peter Lynch",
+    "“Statistics are like bikinis. What they reveal is suggestive, but what they conceal is vital.” – Aaron Levenstein",
+    "“Not everything that can be counted counts, and not everything that counts can be counted.” – Albert Einstein",
+    "“Most people overestimate what they can do in one year and underestimate what they can do in ten years.” – Bill Gates",
+    "“The market is a device for discovering who is patient.” – Morgan Housel",
+    "“Every company has big data in its future, and every company will eventually be in the data business.” – Thomas H. Davenport",
+    "“The data fabric is the next digital transformation.” – Satya Nadella",
+    "“Volatility is the price you pay for performance.” – Morgan Housel",
+    "“Data is what you need to do analytics. Information is what you need to do business.” – John Owen",
+    "“Trading is not about being right or wrong. It’s about managing money.” – Marty Schwartz",
+    "“Spend each day trying to be a little wiser than you were when you woke up.” – Charlie Munger",
+    "“The trend is your friend until the end when it bends.” – Ed Seykota",
+    "“A good decision is based on knowledge and not on numbers.” – Plato",
+    "“The most valuable commodity I know of is information.” – Gordon Gekko",
+    "“Information is the oil of the 21st century, and analytics is the combustion engine.” – Peter Sondergaard",
+    "“We are moving slowly into an era where Big Data is the starting point, not the end.” – Pearl Zhu",
+    "“If you torture the data long enough, it will confess to anything.” – Ronald Coase",
+    "“Money is made by sitting, not trading.” – Jesse Livermore",
+    "“Do not save what is left after spending, but spend what is left after saving.” – Warren Buffett",
+    "“The best minds of my generation are thinking about how to make people click ads.” – Jeff Hammerbacher",
+    "“Software is eating the world.” – Marc Andreessen",
+    "“An investment in knowledge pays the best interest.” – Benjamin Franklin"
+  ];
+
+  while (quotes.length < 100) {
+    quotes.push(quotes[quotes.length % 50]);
+  }
+
+  function showQuote() {
+    const quoteBox = document.getElementById("quote-box");
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    quoteBox.textContent = quotes[randomIndex];
+  }
+
+  setInterval(showQuote, 60000);
+  document.addEventListener("DOMContentLoaded", showQuote);
+</script>
+
+
+
+
+
+<!-- Market Dashboard START -->
+<section class="market-dashboard">
+  <div class="chart-grid">
+    <!-- SENSEX Chart -->
+    <div class="chart-box">
+      <h2>SENSEX</h2>
+      <canvas id="sensexChart"></canvas>
+      <p id="sensexTime" class="timestamp">Last updated: Loading...</p>
+    </div>
+
+    <!-- NIFTY 50 Chart -->
+    <div class="chart-box">
+      <h2>NIFTY 50</h2>
+      <canvas id="niftyChart"></canvas>
+      <p id="niftyTime" class="timestamp">Last updated: Loading...</p>
+    </div>
+
+    <!-- BANK NIFTY Chart -->
+    <div class="chart-box">
+      <h2>BANK NIFTY</h2>
+      <canvas id="bankNiftyChart"></canvas>
+      <p id="bankNiftyTime" class="timestamp">Last updated: Loading...</p>
+    </div>
+
+    <!-- NIFTY IT Chart -->
+    <div class="chart-box">
+      <h2>NIFTY IT</h2>
+      <canvas id="niftyITChart"></canvas>
+      <p id="niftyITTime" class="timestamp">Last updated: Loading...</p>
+    </div>
+
+    <!-- INDIA VIX Chart -->
+    <div class="chart-box">
+      <h2>INDIA VIX</h2>
+      <canvas id="vixChart"></canvas>
+      <p id="vixTime" class="timestamp">Last updated: Loading...</p>
+    </div>
+  </div>
+</section>
+
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Inline Styling Scoped to Dashboard -->
+<style>
+  .market-dashboard {
+    padding: 30px 15px;
+    background-color: #212121;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .market-dashboard .chart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    justify-items: center;
+    align-items: start;
+  }
+
+  .market-dashboard .chart-box {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .market-dashboard canvas {
+    width: 100% !important;
+    height: 150px !important;
+  }
+
+  .market-dashboard h2 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+
+  .market-dashboard .timestamp {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-top: 10px;
+  }
+</style>
+
+<!-- Chart Initialization -->
+<script>
+  const demoData = {
+    labels: ['1 PM', '2 PM', '3 PM', '4 PM', '5 PM', '6 PM', '7 PM'],
+    values: [60000, 60100, 60200, 60350, 60400, 60500, 60600]
+  };
+
+  function createChart(ctx, data) {
+    return new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: data.labels,
+        datasets: [{
+          label: 'Market Data',
+          data: data.values,
+          borderColor: '#00bcd4',
+          backgroundColor: 'rgba(0, 188, 212, 0.2)',
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        scales: {
+          x: {
+            grid: { display: false }
+          },
+          y: {
+            grid: { color: 'rgba(255, 255, 255, 0.1)' }
+          }
+        }
+      }
+    });
+  }
+
+  const charts = [
+    { id: 'sensexChart', timeId: 'sensexTime' },
+    { id: 'niftyChart', timeId: 'niftyTime' },
+    { id: 'bankNiftyChart', timeId: 'bankNiftyTime' },
+    { id: 'niftyITChart', timeId: 'niftyITTime' },
+    { id: 'vixChart', timeId: 'vixTime' }
+  ];
+
+  charts.forEach(chart => {
+    const ctx = document.getElementById(chart.id).getContext('2d');
+    createChart(ctx, demoData);
+  });
+
+  function updateTimestamps() {
+    const time = new Date().toLocaleString();
+    charts.forEach(chart => {
+      document.getElementById(chart.timeId).textContent = `Last updated: ${time}`;
+    });
+  }
+
+  updateTimestamps();
+  setInterval(updateTimestamps, 60000);
+</script>
+<!-- Market Dashboard END -->
+
+
+
+
+
+
+
+  
+<style>.market-dashboard {
+  padding: 30px 15px;
+  background-color: #212121;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.market-dashboard .three-d-box {
+  perspective: 1500px; /* 3D perspective for depth */
+  margin: 0 auto; /* Centering the 3D box */
+}
+
+.market-dashboard .chart-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: start;
+  transform-style: preserve-3d;
+  transition: transform 0.5s; /* Smooth 3D transition */
+}
+
+.market-dashboard .chart-box {
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.market-dashboard .chart-box:hover {
+  transform: translateY(-5px); /* Elevation effect on hover */
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+/* Hover effect for the 3D box container */
+.market-dashboard .three-d-box:hover .chart-grid {
+  transform: rotateY(5deg); /* Horizontal rotation for 3D effect */
+}
+
+.market-dashboard .chart-box h2 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.market-dashboard .timestamp {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-top: 10px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .market-dashboard .chart-grid {
+    flex-direction: column; /* Stack the charts vertically on smaller screens */
+    align-items: center; /* Center align them */
+  }
+}
+
+@media (max-width: 500px) {
+  .market-dashboard .chart-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
   
 </body>
 </html>
