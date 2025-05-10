@@ -403,7 +403,7 @@ nav .fas{
 #blogger-icon {
     position: fixed;
     top: 20px; /* Position from the top */
-    right: 20px; /* Position from the right */
+    right: 50px; /* Position from the right */
     z-index: 9999;
     font-size: 48px; /* Icon size */
     color: #212121; /* Initial color */
