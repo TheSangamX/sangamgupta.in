@@ -598,7 +598,6 @@
 
 
 
-<!-- Market & Portfolio Overview Dashboard -->
 <style>
     body {
       background-color: #080808;
@@ -608,15 +607,15 @@
       padding: 0;
       position: relative;
     }
-  
+
     .dashboard-btn {
       background: #212121;
       color: #fff;
       border: none;
-      padding: 10px 20px;
-      font-size: 16px;
+      padding: 6px 12px;
+      font-size: 14px;
       font-weight: 500;
-      border-radius: 6px;
+      border-radius: 4px;
       cursor: pointer;
       transition: background 0.3s ease;
       position: fixed;
@@ -625,18 +624,18 @@
       justify-content: center;
       gap: 0.5rem;
       text-decoration: none;
-      width: 180px;
+      width: 100px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
-  
+
     .dashboard-btn:hover {
       background: #080808;
     }
-  
+
     .dashboard-btn:focus {
       outline: none;
     }
-  
+
     .dashboard-btn i {
       font-size: 1rem;
     }
@@ -650,81 +649,78 @@
       bottom: 100px;
       right: 20px;
     }
-  </style>
-  
-
-  
-  <!-- Mobile Bottom Navigation Bar -->
-<style>
-  @media screen and (max-width: 768px) {
-    .dashboard-btn {
-      display: none !important; /* Hide floating buttons on mobile */
-    }
 
     .mobile-nav {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: #212121;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 10px 0;
-      z-index: 9999;
-      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+      display: none;
     }
 
-    .mobile-nav a {
-      color: white;
-      text-decoration: none;
-      font-size: 13px;
-      font-family: 'Poppins', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+    @media screen and (max-width: 768px) {
+      .dashboard-btn {
+        display: none !important;
+      }
 
-    .mobile-nav a i {
-      font-size: 18px;
-      margin-bottom: 2px;
-    }
+      .mobile-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #212121;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 0;
+        z-index: 9999;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+      }
 
-    .mobile-nav a:hover {
-      color: #00e676;
-    }
-  }
-</style>
+      .mobile-nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
+      .mobile-nav a i {
+        font-size: 18px;
+        margin-bottom: 2px;
+      }
+
+      .mobile-nav a:hover {
+        color: #00e676;
+      }
+    }
+  </style>
+</head>
+<body>
 
   <!-- Market Overview Button -->
-  <body>
-    <button id="market-overview-btn" class="dashboard-btn">
-      <i class="fas fa-chart-line"></i> Market Overview
-    </button>
-  
-    <script>
-      document.getElementById("market-overview-btn").addEventListener("click", function() {
-        window.location.href = "marketoverview.html";  // Redirect to marketoverview.html
-      });
-    </script>
-  
+  <button id="market-overview-btn" class="dashboard-btn">
+    <i class="fas fa-chart-line"></i> Market Overview
+  </button>
 
-  <!-- Portfolio Data Button -->
   <button id="portfolio-data-btn" class="dashboard-btn">
     <i class="fas fa-chart-line"></i> Portfolio Data
   </button>
 
+  <div class="mobile-nav">
+    <a href="marketoverview.html"><i class="fas fa-chart-line"></i><span>Market</span></a>
+    <a href="portfoliodata.html"><i class="fas fa-briefcase"></i><span>Portfolio</span></a>
+    <a href="https://thesangamx.blogspot.com/" target="_blank"><i class="fab fa-blogger"></i><span>Blog</span></a>
+  </div>
+
   <script>
+    document.getElementById("market-overview-btn").addEventListener("click", function() {
+      window.location.href = "marketoverview.html";
+    });
+
     document.getElementById("portfolio-data-btn").addEventListener("click", function() {
       window.location.href = "portfoliodata.html";
     });
   </script>
-  <div class="mobile-nav">
-  <a href="marketoverview.html"><i class="fas fa-chart-line"></i><span>Market</span></a>
-  <a href="portfoliodata.html"><i class="fas fa-briefcase"></i><span>Portfolio</span></a>
-</div>
-  </body>
+
 
 
 
