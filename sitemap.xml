@@ -1,179 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Generated on 2025-05-11 - Optimized for maximum Google indexing and image search visibility -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
-                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
-                            http://www.google.com/schemas/sitemap-image/1.1
-                            http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
-<!-- SEO Optimized Sitemap for sangamgupta.in - Priority Crawling and Maximum Image Indexing -->
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+            http://www.sitemaps.org/schemas/sitemap/0.9 
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+            http://www.google.com/schemas/sitemap-image/1.1 
+            http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd
+            http://www.google.com/schemas/sitemap-video/1.1 
+            http://www.google.com/schemas/sitemap-news/0.9">
 
-<!--  Homepage - Primary Entry Point - Maximum Indexing Priority -->
-<url>
-  <loc>https://www.sangamgupta.in/</loc>
-  <lastmod>2025-05-11T06:30:00+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>1.0</priority>
-  <xhtml:link rel="alternate" hreflang="en" href="https://www.sangamgupta.in/"/>
-  <xhtml:link rel="canonical" href="https://www.sangamgupta.in/"/>
-  <!--  Portrait Image - Primary Profile Photo - High Priority for Google Images -->
-  <image:image>
-    <image:loc>https://www.sangamgupta.in/images/sangamgupta-portrait-1200x1200.png</image:loc>
-    <image:title>Sangam Gupta, AI-Powered Trader &amp; CEO | Professional Portrait</image:title>
-    <image:caption>Sangam Gupta, visionary AI-Powered Trader &amp; CEO, transforming financial markets with cutting-edge algorithms, autonomous trading platforms, and web development expertise.</image:caption>
-    <image:geo_location>India</image:geo_location>
-    <image:license>https://creativecommons.org/licenses/by-nc/4.0/</image:license>
-  </image:image>
-  <!--  Profile Image - Professional Headshot - High Priority for Google Images -->
-  <image:image>
-    <image:loc>https://www.sangamgupta.in/images/sangamgupta-profile-1200x1200.png</image:loc>
-    <image:title>Sangam Gupta | AI Trading Expert Profile Image</image:title>
-    <image:caption>Sangam Gupta, future Quantitative Leader and AI-powered trader with deep expertise in Python, APIs, web development, and intelligent stock market automation.</image:caption>
-    <image:geo_location>India</image:geo_location>
-    <image:license>https://creativecommons.org/licenses/by-nc/4.0/</image:license>
-  </image:image>
-  <!--  Header Banner Image  -->
-  <image:image>
-    <image:loc>https://www.sangamgupta.in/images/sangamgupta-header-1200x1200.png</image:loc>
-    <image:title>Sangam Gupta Header Image</image:title>
-    <image:caption>Sangam Gupta, elite tech entrepreneur building autonomous financial systems with AI, ML, data analytics, and scalable web solutions for next-gen trading.</image:caption>
-  </image:image>
-  <!--  Logo Image  -->
-  <image:image>
-    <image:loc>https://www.sangamgupta.in/images/sglogo.png</image:loc>
-    <image:title>Sangam Gupta Logo</image:title>
-    <image:caption>Logo of Sangam Gupta</image:caption>
-  </image:image>
-  <!--  User Portrait Image  -->
-  <image:image>
-    <image:loc>https://www.sangamgupta.in/images/sguser.png</image:loc>
-    <image:title>Sangam Gupta Portrait</image:title>
-    <image:caption>Sangam Gupta Portrait - AI-Powered Trader and Future Quant Leader</image:caption>
-  </image:image>
-  <!--  Portfolio Work Image 1  -->
-  <image:image>
-    <image:loc>https://www.sangamgupta.in/images/sgwork1.png</image:loc>
-    <image:title>AI-Powered Portfolio Optimizer</image:title>
-    <image:caption>Smarter investing starts here. Optimize your portfolio using real-time insights, Sharpe Ratio, and global stock data — powered by AI.</image:caption>
-  </image:image>
-  <!--  Portfolio Work Image 2  -->
-  <image:image>
-    <image:loc>https://www.sangamgupta.in/images/sgwork2.png</image:loc>
-    <image:title>Exposing Misinformation with AI Precision</image:title>
-    <image:caption>Detect misinformation in real-time using Natural Language Processing and Machine Learning.</image:caption>
-  </image:image>
-  <!--  Portfolio Work Image 3  -->
-  <image:image>
-    <image:loc>https://www.sangamgupta.in/images/sgwork3.png</image:loc>
-    <image:title>AI Chatbot Technology</image:title>
-    <image:caption>Transforming User Engagement with Cutting-Edge AI Chatbot Technology</image:caption>
-  </image:image>
-  <!--  Open Graph Image  -->
-  <image:image>
-    <image:loc>https://www.sangamgupta.in/images/open_graph_image.png</image:loc>
-    <image:title>Sangam Gupta - Social Sharing Image</image:title>
-    <image:caption>Sangam Gupta | AI-Powered Trader and Future Quant Leader</image:caption>
-  </image:image>
-  <!--  Favicon -->
-  <image:image>
-    <image:loc>https://www.sangamgupta.in/images/favicon.ico</image:loc>
-    <image:title>Sangam Gupta Favicon</image:title>
-    <image:caption>Favicon for Sangam Gupta's website</image:caption>
-  </image:image>
-</url>
+  <!-- Homepage - Primary Entry Point -->
+  <url>
+    <loc>https://www.sangamgupta.in/</loc>
+    <lastmod>2025-05-11T06:30:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sangamgupta.in/"/>
+    <xhtml:link rel="canonical" href="https://www.sangamgupta.in/"/>
+    
+    <!-- Images -->
+    <image:image>
+      <image:loc>https://www.sangamgupta.in/images/sangamgupta-portrait-1200x1200.png</image:loc>
+      <image:title>Sangam Gupta, AI-Powered Trader &amp; CEO | Professional Portrait</image:title>
+      <image:caption>Sangam Gupta, visionary AI-Powered Trader &amp; CEO, transforming financial markets with cutting-edge algorithms, autonomous trading platforms, and web development expertise.</image:caption>
+      <image:geo_location>India</image:geo_location>
+      <image:license>https://creativecommons.org/licenses/by-nc/4.0/</image:license>
+    </image:image>
 
-<!--  About section - Professional Bio & Background Information -->
-<url>
-  <loc>https://www.sangamgupta.in/#about</loc>
-  <lastmod>2025-05-11T06:30:00+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.9</priority>
-  <xhtml:link rel="alternate" hreflang="en" href="https://www.sangamgupta.in/#about"/>
-</url>
+    <image:image>
+      <image:loc>https://www.sangamgupta.in/images/sangamgupta-profile-1200x1200.png</image:loc>
+      <image:title>Sangam Gupta | AI Trading Expert Profile Image</image:title>
+      <image:caption>Sangam Gupta, future Quantitative Leader and AI-powered trader with deep expertise in Python, APIs, web development, and intelligent stock market automation.</image:caption>
+      <image:geo_location>India</image:geo_location>
+      <image:license>https://creativecommons.org/licenses/by-nc/4.0/</image:license>
+    </image:image>
 
-<!--  Services section - AI Trading & Development Services -->
-<url>
-  <loc>https://www.sangamgupta.in/#services</loc>
-  <lastmod>2025-05-11T06:30:00+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.9</priority>
-  <xhtml:link rel="alternate" hreflang="en" href="https://www.sangamgupta.in/#services"/>
-</url>
+    <image:image>
+      <image:loc>https://www.sangamgupta.in/images/sangamgupta-header-1200x1200.png</image:loc>
+      <image:title>Sangam Gupta Header Image</image:title>
+      <image:caption>Sangam Gupta, elite tech entrepreneur building autonomous financial systems with AI, ML, data analytics, and scalable web solutions for next-gen trading.</image:caption>
+    </image:image>
 
-<!--  Portfolio section - Showcasing AI Trading Projects -->
-<url>
-  <loc>https://www.sangamgupta.in/#portfolio</loc>
-  <lastmod>2025-05-11T06:30:00+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.95</priority>
-  <xhtml:link rel="alternate" hreflang="en" href="https://www.sangamgupta.in/#portfolio"/>
-</url>
+    <image:image>
+      <image:loc>https://www.sangamgupta.in/images/sglogo.png</image:loc>
+      <image:title>Sangam Gupta Logo</image:title>
+      <image:caption>Logo of Sangam Gupta</image:caption>
+    </image:image>
 
-<!--  Contact section - Professional Inquiries -->
-<url>
-  <loc>https://www.sangamgupta.in/#contact</loc>
-  <lastmod>2025-05-11T06:30:00+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.8</priority>
-  <xhtml:link rel="alternate" hreflang="en" href="https://www.sangamgupta.in/#contact"/>
-</url>
+    <image:image>
+      <image:loc>https://www.sangamgupta.in/images/sguser.png</image:loc>
+      <image:title>Sangam Gupta Portrait</image:title>
+      <image:caption>Sangam Gupta Portrait - AI-Powered Trader and Future Quant Leader</image:caption>
+    </image:image>
 
-<!--  Resume PDF - Professional Credentials -->
-<url>
-  <loc>https://sangamgupta.in/images/Sangam_Gupta_Resume.pdf</loc>
-  <lastmod>2025-05-11T06:30:00+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.85</priority>
-  <xhtml:link rel="alternate" hreflang="en" href="https://sangamgupta.in/images/Sangam_Gupta_Resume.pdf"/>
-  <xhtml:link rel="alternate" media="print" href="https://sangamgupta.in/images/Sangam_Gupta_Resume.pdf"/>
-</url>
+    <image:image>
+      <image:loc>https://www.sangamgupta.in/images/sgwork1.png</image:loc>
+      <image:title>AI-Powered Portfolio Optimizer</image:title>
+      <image:caption>Smarter investing starts here. Optimize your portfolio using real-time insights, Sharpe Ratio, and global stock data — powered by AI.</image:caption>
+    </image:image>
 
-<!--  Market Overview Page - Real-time Market Analysis -->
-<url>
-  <loc>https://sangamgupta.in/marketoverview</loc>
-  <lastmod>2025-05-11T06:30:00+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.90</priority>
-  <xhtml:link rel="alternate" hreflang="en" href="https://sangamgupta.in/marketoverview"/>
-  <news:news>
-    <news:publication>
-      <news:name>Sangam Gupta Financial Insights</news:name>
-      <news:language>en</news:language>
-    </news:publication>
-    <news:publication_date>2025-05-11T06:30:00+00:00</news:publication_date>
-    <news:title>Current Market Analysis by AI Trading Expert Sangam Gupta</news:title>
-  </news:news>
-</url>
+    <image:image>
+      <image:loc>https://www.sangamgupta.in/images/sgwork2.png</image:loc>
+      <image:title>Exposing Misinformation with AI Precision</image:title>
+      <image:caption>Detect misinformation in real-time using Natural Language Processing and Machine Learning.</image:caption>
+    </image:image>
 
-<!--  Portfolio Data Page - Investment Performance & Strategy -->
-<url>
-  <loc>https://sangamgupta.in/portfoliodata</loc>
-  <lastmod>2025-05-11T06:30:00+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.90</priority>
-  <xhtml:link rel="alternate" hreflang="en" href="https://sangamgupta.in/portfoliodata"/>
-</url>
+    <image:image>
+      <image:loc>https://www.sangamgupta.in/images/sgwork3.png</image:loc>
+      <image:title>AI Chatbot Technology</image:title>
+      <image:caption>Transforming User Engagement with Cutting-Edge AI Chatbot Technology</image:caption>
+    </image:image>
 
-<!--  External Blog - Trading Insights & Analysis -->
-<url>
-  <loc>https://thesangamx.blogspot.com/</loc>
-  <lastmod>2025-05-11T06:30:00+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.85</priority>
-  <xhtml:link rel="alternate" hreflang="en" href="https://thesangamx.blogspot.com/"/>
-</url>
+    <image:image>
+      <image:loc>https://www.sangamgupta.in/images/open_graph_image.png</image:loc>
+      <image:title>Sangam Gupta - Social Sharing Image</image:title>
+      <image:caption>Sangam Gupta | AI-Powered Trader and Future Quant Leader</image:caption>
+    </image:image>
 
-<!--  Structured Data & Schema Implementation Notice -->
-<url>
-  <loc>https://sangamgupta.in/schema</loc>
-  <lastmod>2025-05-11T06:30:00+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.70</priority>
-  <xhtml:link rel="alternate" hreflang="en" href="https://sangamgupta.in/schema"/>
-</url>
+    <image:image>
+      <image:loc>https://www.sangamgupta.in/images/favicon.ico</image:loc>
+      <image:title>Sangam Gupta Favicon</image:title>
+      <image:caption>Favicon for Sangam Gupta's website</image:caption>
+    </image:image>
+  </url>
+
+  <!-- About Section -->
+  <url>
+    <loc>https://www.sangamgupta.in/#about</loc>
+    <lastmod>2025-05-11T06:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sangamgupta.in/#about"/>
+  </url>
+
+  <!-- Services Section -->
+  <url>
+    <loc>https://www.sangamgupta.in/#services</loc>
+    <lastmod>2025-05-11T06:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sangamgupta.in/#services"/>
+  </url>
+
+  <!-- Portfolio Section -->
+  <url>
+    <loc>https://www.sangamgupta.in/#portfolio</loc>
+    <lastmod>2025-05-11T06:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sangamgupta.in/#portfolio"/>
+  </url>
+
+  <!-- Contact Section -->
+  <url>
+    <loc>https://www.sangamgupta.in/#contact</loc>
+    <lastmod>2025-05-11T06:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sangamgupta.in/#contact"/>
+  </url>
+
+  <!-- Resume -->
+  <url>
+    <loc>https://sangamgupta.in/images/Sangam_Gupta_Resume.pdf</loc>
+    <lastmod>2025-05-11T06:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sangamgupta.in/images/Sangam_Gupta_Resume.pdf"/>
+    <xhtml:link rel="alternate" media="print" href="https://sangamgupta.in/images/Sangam_Gupta_Resume.pdf"/>
+  </url>
+
+  <!-- Market Overview -->
+  <url>
+    <loc>https://sangamgupta.in/marketoverview</loc>
+    <lastmod>2025-05-11T06:30:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sangamgupta.in/marketoverview"/>
+    <news:news>
+      <news:publication>
+        <news:name>Sangam Gupta Financial Insights</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-05-11T06:30:00+00:00</news:publication_date>
+      <news:title>Current Market Analysis by AI Trading Expert Sangam Gupta</news:title>
+    </news:news>
+  </url>
+
+  <!-- Portfolio Data -->
+  <url>
+    <loc>https://sangamgupta.in/portfoliodata</loc>
+    <lastmod>2025-05-11T06:30:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sangamgupta.in/portfoliodata"/>
+  </url>
+
+  <!-- External Blog -->
+  <url>
+    <loc>https://thesangamx.blogspot.com/</loc>
+    <lastmod>2025-05-11T06:30:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thesangamx.blogspot.com/"/>
+  </url>
+
+  <!-- Schema Data Page -->
+  <url>
+    <loc>https://sangamgupta.in/schema</loc>
+    <lastmod>2025-05-11T06:30:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sangamgupta.in/schema"/>
+  </url>
 
 </urlset>
