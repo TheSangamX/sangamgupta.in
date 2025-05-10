@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Sangam Gupta | AI-Powered Trader & Future Quant Leader</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <h2><i class="fas fa-chart-line" style="margin-right: 8px;"></i>Portfolio Data Overview</h2>
+<style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #121212;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      color: #ffffff;
+      font-size: 28px;
+    }
+
+    table {
+      width: 90%;
+      max-width: 1300px;
+      border-collapse: separate;
+      border-spacing: 0;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+      background-color: #1e1e1e;
+      margin-bottom: 1px;
+      transition: all 0.3s ease;
+    }
+
+    th, td {
+      padding: 16px 12px;
+      text-align: center;
+      font-size: 16px;
+      border-bottom: 1px solid #333;
+      color: #e0e0e0;
+    }
+
+    tr:hover {
+      background-color: #2c2c2c;
+      transition: 0.2s ease-in-out;
+    }
+
+    tr:nth-child(even) {
+      background-color: #1a1a1a;
+    }
+
+    .sheet-container {
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 6px 12px rgba(255, 255, 255, 0.1);
+      margin-top: 10px;
+      width: 95%;
+      max-width: 1350px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .sheet-container iframe {
+      width: 100%;
+      height: 650px;
+      border: none;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 6px 10px rgba(255, 255, 255, 0.05);
+    }
+
+    .disclaimer {
+      margin-top: 1px;
+      color: #999;
+      font-size: 13px;
+      text-align: center;
+      max-width: 800px;
+      padding: 10px 20px;
+      border-top: 1px solid #333;
+      opacity: 0.8;
+    }
+</style>
+</head>
+<body>
+  <table id="portfolio-table">
+    <tbody></tbody>
+  </table>
+
+  <div class="sheet-container">
+    <iframe 
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQYb4s-71qW7llng2eTLGVcSZ4sxAVUNq4ygBtqxPrGr9A7Y4zt3oZ1tnYEs8MsymwVmm25u1c-6hmr/pubhtml?widget=true&amp;headers=false">
+    </iframe>
+  </div>
+
+<div class="disclaimer">
+  <i class="fas fa-triangle-exclamation" style="color: #f39c12; margin-right: 6px;"></i>
+  This portfolio data is for educational and informational purposes only. It is not intended as financial advice. Always do your own research before making investment decisions.
+</div>
+
+
+  <script>
+    const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQYb4s-71qW7llng2eTLGVcSZ4sxAVUNq4ygBtqxPrGr9A7Y4zt3oZ1tnYEs8MsymwVmm25u1c-6hmr/gviz/tq?tqx=out:json";
+
+    fetch(sheetURL)
+      .then(res => res.text())
+      .then(rep => {
+        const data = JSON.parse(rep.substr(47).slice(0, -2));
+        const rows = data.table.rows;
+        const tbody = document.querySelector("#portfolio-table tbody");
+
+        rows.forEach(row => {
+          const tr = document.createElement("tr");
+          const cells = row.c;
+
+          const instrument = cells[0] ? cells[0].v : '';
+          const qty = cells[1] ? cells[1].v : '';
+          const avgCost = cells[2] ? cells[2].v : '';
+          const ltp = cells[3] ? cells[3].v : '';
+          const invested = cells[4] ? cells[4].v : '';
+          const currentValue = cells[5] ? cells[5].v : '';
+          const pnl = cells[6] ? cells[6].v : '';
+          const netChange = cells[7] ? cells[7].v : '';
+          const dayChange = cells[8] ? cells[8].v : '';
+
+          const dataArray = [instrument, qty, avgCost, ltp, invested, currentValue, pnl, netChange, dayChange];
+
+          dataArray.forEach(item => {
+            const td = document.createElement("td");
+            td.textContent = item;
+            tr.appendChild(td);
+          });
+
+          tbody.appendChild(tr);
+        });
+      })
+      .catch(err => console.error("Error fetching the Google Sheets data:", err));
+</script>
+
+
+
+
+
+
+
+<!-- Load Google Charts Library -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script>
+  google.charts.load('current', {'packages':['corechart', 'bar']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    // Static data for P&L
+    const chartData = [
+      ['Instrument', 'P&L'],
+      ['ALPL30IETF', 2.56],
+      ['AUTOIETF', 8.59],
+      ['COMMOIETF', 2.75],
+      ['EMULTIMQ', 0.61],
+      ['EVINDIA', -1.12],
+      ['GOLDBEES', 11.69],
+      ['HDFCSML250', 3.17],
+      ['ICICIB22', 9.98],
+      ['FMCGIETF', 6.06],
+      ['INFRAIETF', 8.01],
+      ['MOM30IETF', -1.01],
+      ['METALIETF', 0.96],
+      ['MIDSMALL', 2.07],
+      ['MODEFENCE', 25.57],
+      ['MOMENTUM50', 4.36],
+      ['MOREALTY', -1.87],
+      ['MULTICAP', 3.19],
+      ['NIFTYBEES', 6.23],
+      ['NIFTYQLITY', 8.62],
+      ['PSUBNKBEES', 5.93],
+      ['TOP10ADD', 5.01]
+    ];
+
+    const data = google.visualization.arrayToDataTable(chartData);
+
+    const options = {
+      title: 'Portfolio P&L Overview',
+      chartArea: {width: '60%'},
+      hAxis: {
+        title: 'P&L',
+        minValue: 0
+      },
+      vAxis: {
+        title: 'Instrument'
+      },
+      backgroundColor: '#ffffff', // Background
+      colors: ['#33C7FF'], // Blue color for bars
+    };
+
+    const chart = new google.visualization.BarChart(document.getElementById('portfolioChart'));
+    chart.draw(data, options);
+  }
+</script>
+
+<!-- Add div to render the chart -->
+<div id="portfolioChart" style="width: 80%; max-width: 900px; height: 400px; margin-top: 30px;"></div>
+
+<style>
+#portfolioChart:hover {
+  box-shadow: 0 0 15px 2px white;
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 10px;
+}
+#portfolioChart {
+  border-radius: 16px;
+  overflow: hidden; /* Important to clip inner content to rounded corners */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05); /* Optional: soft glow */
+}
+</style>
+<p id="lastUpdated" style="
+  color: #b0b0b0;
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #1e1e1e;
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+"></p>
+
+<script>
+  const today = new Date();
+  const options = { year: 'numeric', month: 'short', day: 'numeric' };
+  document.getElementById("lastUpdated").textContent = `Last updated on: ${today.toLocaleDateString(undefined, options)}`;
+</script>
+
+</body>
+</html>
