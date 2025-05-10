@@ -400,22 +400,23 @@ nav .fas{
 
 
 /* Bloggers */
-
 #blogger-icon {
     position: fixed;
-    bottom: 80px;
-    right: 20px;
+    top: 20px; /* Position from the top */
+    right: 20px; /* Position from the right */
     z-index: 9999;
     font-size: 48px; /* Icon size */
-    color: #ff004f; /* Initial color */
+    color: #212121; /* Initial color */
     transition: all 0.3s ease;
-  }
+}
+
   
   #blogger-icon:hover {
     transform: scale(1.1); /* Grow on hover */
     color: #FF5722; /* Change color on hover */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Shadow effect */
   }
+  
   
 
 /* Github */
