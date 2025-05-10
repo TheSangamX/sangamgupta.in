@@ -402,20 +402,27 @@ nav .fas{
 /* Bloggers */
 #blogger-icon {
     position: fixed;
-    top: 20px; /* Position from the top */
+    bottom: 150px; /* Position from the bottom */
     right: 50px; /* Position from the right */
     z-index: 9999;
     font-size: 48px; /* Icon size */
-    color: #212121; /* Initial color */
+    color: #ffffff; /* Initial color */
     transition: all 0.3s ease;
 }
 
-  
-  #blogger-icon:hover {
+#blogger-icon:hover {
     transform: scale(1.1); /* Grow on hover */
     color: #FF5722; /* Change color on hover */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+/* Hide Blogger Icon on Mobile */
+@media screen and (max-width: 768px) {
+  #blogger-icon {
+    display: none !important; /* Hide icon on mobile screens */
   }
+}
+
   
   
 
