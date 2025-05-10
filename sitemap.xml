@@ -7,14 +7,12 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="
-            http://www.sitemaps.org/schemas/sitemap/0.9 
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
-            http://www.google.com/schemas/sitemap-image/1.1 
-            http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd
-            http://www.google.com/schemas/sitemap-video/1.1 
-            http://www.google.com/schemas/sitemap-news/0.9">
+          http://www.sitemaps.org/schemas/sitemap/0.9 https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+          http://www.google.com/schemas/sitemap-image/1.1 https://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd
+          http://www.google.com/schemas/sitemap-video/1.1 https://www.google.com/schemas/sitemap-video/1.1/sitemap-video.xsd
+          http://www.google.com/schemas/sitemap-news/0.9 https://www.google.com/schemas/sitemap-news/0.9/sitemap-news.xsd">
 
-  <!-- Homepage - Primary Entry Point -->
+  <!-- Homepage -->
   <url>
     <loc>https://www.sangamgupta.in/</loc>
     <lastmod>2025-05-11T06:30:00+00:00</lastmod>
@@ -89,7 +87,7 @@
     </image:image>
   </url>
 
-  <!-- About Section -->
+  <!-- Site Sections -->
   <url>
     <loc>https://www.sangamgupta.in/#about</loc>
     <lastmod>2025-05-11T06:30:00+00:00</lastmod>
@@ -98,7 +96,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sangamgupta.in/#about"/>
   </url>
 
-  <!-- Services Section -->
   <url>
     <loc>https://www.sangamgupta.in/#services</loc>
     <lastmod>2025-05-11T06:30:00+00:00</lastmod>
@@ -107,7 +104,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sangamgupta.in/#services"/>
   </url>
 
-  <!-- Portfolio Section -->
   <url>
     <loc>https://www.sangamgupta.in/#portfolio</loc>
     <lastmod>2025-05-11T06:30:00+00:00</lastmod>
@@ -116,7 +112,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sangamgupta.in/#portfolio"/>
   </url>
 
-  <!-- Contact Section -->
   <url>
     <loc>https://www.sangamgupta.in/#contact</loc>
     <lastmod>2025-05-11T06:30:00+00:00</lastmod>
@@ -161,7 +156,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://sangamgupta.in/portfoliodata"/>
   </url>
 
-  <!-- External Blog -->
+  <!-- Blog -->
   <url>
     <loc>https://thesangamx.blogspot.com/</loc>
     <lastmod>2025-05-11T06:30:00+00:00</lastmod>
@@ -170,7 +165,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://thesangamx.blogspot.com/"/>
   </url>
 
-  <!-- Schema Data Page -->
+  <!-- Schema Page -->
   <url>
     <loc>https://sangamgupta.in/schema</loc>
     <lastmod>2025-05-11T06:30:00+00:00</lastmod>
